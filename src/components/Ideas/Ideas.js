@@ -5,7 +5,7 @@ import './Ideas.css';
 const Ideas = ({ideas, deleteIdea}) => {
   const ideaCards = ideas.map(idea => {
     return (
-      <Card
+      <Card 
         title={idea.title}
         description={idea.description}
         id={idea.id}
@@ -15,9 +15,9 @@ const Ideas = ({ideas, deleteIdea}) => {
     )
   })
   return (
-  <div className='ideas-container'>
-    {ideaCards}
-  </div>
+    <div className='ideas-container'>
+      {ideaCards}
+    </div>
   )
 }
 
